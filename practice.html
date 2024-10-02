@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+        <img src="dog.jpeg" usemap="#dog">
+        <map name="dog">
+            <area shape="rect" coords="129,55,158,73" href="LAB4.html">
+        </map><br>
+        <p id="demo">hiii</p>
+        <button onclick="document.getElementById('demo').innerHTML = 'Hello World!'">Click me</button>
+        <p id="chal">x+y</p>
+        <p id="chalo"></p>
+        <button onclick="calc()".innerHTML=z">Ans</button>
+        <p id="tv"></p>
+        <br><script>
+            
+            document.write("<br>");
+            function calc(){
+                var x=9.1;
+                var y=9;
+                var z= x+y;
+                
+                if(y>x){
+                    document.getElementById('chalo').innerHTML="answer="+z;
+                }else{
+                    
+                    document.getElementById('chalo').innerHTML=x**2;
+                }
+            }
+            document.getElementById('tv').innerHTML= typeof 77 +"<br>"+ typeof "tv";
+        </script>
+        
+
+    </body>
+</html>

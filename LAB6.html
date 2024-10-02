@@ -1,0 +1,49 @@
+<html>
+<head>
+  <link rel="stylesheet" href="LAB6.css">
+</head>
+<body>
+  <div class="navbar">
+    <div><img src="logo.jpg" alt="Pinterest logo" style="height: 40px;"></div>
+    <h2>Pincrest</h2>
+    <input type="text" placeholder="Search">
+    <div><button onclick="loginFunction()">Log in</button></div>
+    <div><button onclick="signUpFunction()">Sign up</button></div>
+  </div>
+  <div class="content">
+    <div class="card" id="card1" onmouseover="highlightCard('card1')" onmouseout="unhighlightCard('card1')">
+      <img src="image1.jpeg" alt="Image 1"><p>University of Colarado</p>
+    </div>
+    <div class="card" id="card2" onmouseover="highlightCard('card2')" onmouseout="unhighlightCard('card2')">
+      <img src="image2.jpg" alt="Image 2"><p> University of  California</p>
+
+    </div>
+    <div class="card" id="card3" onmouseover="highlightCard('card3')" onmouseout="unhighlightCard('card3')">
+      <img src="image3.jpg" alt="Image 3"><p></p>
+    </div>
+    <div class="card" id="card4" onmouseover="highlightCard('card4')" onmouseout="unhighlightCard('card4')">
+      <img src="image4.jpeg" alt="Image 4"><p>ghjk</p>
+    </div>
+    <div class="card" id="card5" onmouseover="highlightCard('card4')" onmouseout="unhighlightCard('card4')">
+        <img src="image5.jpg" alt="Image 5">
+      </div>
+      <div class="card" id="card6" onmouseover="highlightCard('card4')" onmouseout="unhighlightCard('card4')">
+        <img src="image6.jpg" alt="Image 6">
+      </div>
+  </div>
+  <script>
+    function highlightCard(cardId) {
+      document.getElementById(cardId).classList.add("highlight");
+    }
+    function unhighlightCard(cardId) {
+      document.getElementById(cardId).classList.remove("highlight");
+    }
+    function loginFunction() {
+      document.write("Login functionality goes here!");
+    }
+    function signUpFunction() {
+      document.write("Sign up functionality goes here!");
+    }
+  </script>
+</body>
+</html>
